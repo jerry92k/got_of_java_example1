@@ -1,11 +1,13 @@
 package c.middle;
 
+import java.math.BigDecimal;
+
 public class Employee {
     private String name; // 이름
-    private int type; //업무 역할
-    private long salary; //연봉
+    private SalaryIncreaseRate type; //업무 역할
+    private BigDecimal salary; //연봉
 
-    public Employee(String name, int type, long salary) {
+    public Employee(String name, SalaryIncreaseRate type, BigDecimal salary) {
         this.name = name;
         this.type = type;
         this.salary = salary;
@@ -20,19 +22,19 @@ public class Employee {
         this.name = name;
     }
 
-    public int getType() {
+    public SalaryIncreaseRate getType() {
         return type;
     }
 
-    public void setType(int type) {
+    public void setType(SalaryIncreaseRate type) {
         this.type = type;
     }
 
-    public long getSalary() {
+    public BigDecimal getSalary() {
         return salary;
     }
 
-    public void setSalary(long salary) {
+    public void setSalary(BigDecimal salary) {
         this.salary = salary;
     }
 
